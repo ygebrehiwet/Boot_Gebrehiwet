@@ -2,8 +2,8 @@ package org.example;
 
 import java.util.Scanner;
 
-public class calculator3 {
-    public class void main(String[] args) {
+public class Calculator3 {
+    public static void main(String[] args) {
         Scanner scanner= new Scanner(System.in);
 
         System.out.print("Enter monthly payout:$");
@@ -19,10 +19,12 @@ public class calculator3 {
         int n=years*12;
         double presentValue;
 
-        if(monthlyRate==0){presentValue=payment*n;
+        if(monthlyRate==0){
+            presentValue=payment*n;
+        }
             else {
-            { presentValue=payment*
-                (1 - Math.pow(1 + monthlyRate, -n)/ monthlyRate;
+             presentValue=payment*
+                (1 - Math.pow(1 + monthlyRate, -n)/ monthlyRate);
             }
             System.out.printf("Present value: $%.2f%n", presentValue);
 

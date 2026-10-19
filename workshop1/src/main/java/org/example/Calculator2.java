@@ -1,8 +1,10 @@
 package org.example;
 
-public class calculator2 {
-}
-public class static void main(String[] args) {
+import java.util.Scanner;
+
+public class Calculator2 {
+
+public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
     System.out.print("Enter deposit amount: $");
